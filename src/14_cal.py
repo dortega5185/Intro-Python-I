@@ -41,4 +41,14 @@ if len(sys.argv) == 1:
     print(calendar.month(year, month))
 
 elif len(sys.argv) == 2:
+    month = int(sys.argv[1])
+    year = datetime.today().year
+    print(calendar.month(year, month))
 
+elif len(sys.argv) == 3:
+    month = int(sys.argv[1])
+    year = int(sys.argv[2])
+    print(calendar.month(year, month))
+
+else:
+    print("Error missing arguments")
